@@ -1,14 +1,10 @@
-# Учебная сборка Loftschool
+#Борисенко Андрей
 
-> Сборка работает на gulp версии 4.0. 
+## За основу взята учебная сборка Loftschool
 
-#### Для начала работы
+> Сборка работает на gulp версии 4.0.
 
-1. ```clone this repo```
-2. ```cd path/to/...```
-3. ```npm install gulpjs/gulp-cli -g```  
-> Установка последней версии Gulp CLI tools глобально (подробнее - [GitHub](https://github.com/gulpjs/gulp/blob/4.0/docs/getting-started.md) )
+#### В сборку добавлены 2 таска:
 
-4. ```npm install```
-6. ```run gulp``` 
-
+1. sprite.png - создает спрайт из png картинок и копирует его в папку "build/assets/img/sprite_png"
+2. copy.fonts - копирует шрифты в папку со сборкой "build/assets/fonts"
