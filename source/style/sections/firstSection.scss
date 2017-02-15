@@ -1,6 +1,6 @@
 .first-section{
   background-image: url("../img/firstSection_bg.png");
-  height: 720px;
+  height: 790px;
   position: relative;
 }
 
@@ -117,7 +117,7 @@
 
 //first-section__bottom
 .first-section-bottom{
-  position: relative;
+  position: absolute;
   bottom: 0px;
   left: 0;
   right: 0;
@@ -125,4 +125,17 @@
   font-size: 0;
 }
 
+.first-section-bottom__left{
+  display: inline-block;
+  background-image: url("../img/sprite/about_bg_left.svg");
+  height: 100%;
+  width: 50%;
+}
+
+.first-section-bottom__right{
+  display: inline-block;
+  background-image: url("../img/sprite/about_bg_right.svg");
+  height: 100%;
+  width: 50%;
+}
 
