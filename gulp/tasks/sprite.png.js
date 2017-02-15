@@ -5,7 +5,7 @@
 
 module.exports = function() {
     $.gulp.task('sprite:png', function () {
-        var spriteData = $.gulp.src('./source/images/sprite_png/*.png').pipe($.gp.spritesmith({
+        var spriteData = $.gulp.src('./source/sprite_png/*.png').pipe($.gp.spritesmith({
             imgName: 'sprite.png',
             cssName: 'sprite.scss',
             algorithm: 'binary-tree'

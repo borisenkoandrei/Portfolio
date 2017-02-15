@@ -1,3 +1,34 @@
 extends ../_template
 block content
-    .firstsection dfdfdfdfd
+    .wrapper
+        .first-section
+            .header.clearfix
+                ul.social
+                    li.social__item
+                        a.social__link(href = "#")
+                            svg.social__img
+                                use.pic(xlink:href="assets/img/sprite.svg#vk")
+                    li.social__item
+                        a.social__link(href = "#")
+                            svg.social__img
+                                use.pic(xlink:href="assets/img/sprite.svg#github")
+                    li.social__item
+                        a.social__link(href = "#")
+                            svg.social__img
+                                use.social__pic(xlink:href="assets/img/sprite.svg#in")
+                .hamburger
+                    a.hamburger__link(href = "#")
+                        svg.hamburger__img
+                            use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
+            .first-section__content
+                .user
+                    .user__photo-wrapper
+                        .user__photo
+                            img.user__pic(src="/assets/img/userPhoto.png" alt="User")
+                    .user__name Владимир Астахов
+                    .user__desc Личный сайт веб разработчика
+                .first-section-bottom
+                    .first-section-bottom__left
+
+                    .first-section-bottom__right
+
