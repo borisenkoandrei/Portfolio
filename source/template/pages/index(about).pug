@@ -1,0 +1,185 @@
+extends ../_template
+block content
+	.wrapper
+		.first-section
+			.first-section__content
+				.header.clearfix
+					ul.social
+						li.social__item
+							a.social__link(href = "#")
+								svg.social__img
+									use.pic(xlink:href="assets/img/sprite.svg#vk")
+						li.social__item
+							a.social__link(href = "#")
+								svg.social__img
+									use.pic(xlink:href="assets/img/sprite.svg#github")
+						li.social__item
+							a.social__link(href = "#")
+								svg.social__img
+									use.social__pic(xlink:href="assets/img/sprite.svg#in")
+					.hamburger
+						a.hamburger__link(href = "#")
+							svg.hamburger__img
+								use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
+				.user
+					.user__photo-wrapper
+						.user__photo
+							img.user__pic(src="/assets/img/userPhoto.png" alt="User")
+					.user__name Владимир Астахов
+					.user__desc Личный сайт веб разработчика
+				.first-section-bottom
+					.first-section-bottom__left
+						.title-bg
+							.title-text ОБО МНЕ
+					.first-section-bottom__right
+						.title-text.title-text_little
+							| Чем я могу быть!{br}
+							| вам полезен
+		.second-section
+			.second-section__left
+				.second-section__photo-wrapper
+					.second-section__photo(style="background-image:url('/assets/img/right-col_user-photo.png')")
+				.second-section__title
+					.title-text Кто я
+				.second-section__description
+					p.second-section__par Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+					p.second-section__par Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+			.second-section__right
+				.right__desc
+					p.right__desc-content Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+				.skill-block
+					.skill-block__title Frontend
+					ul.skill-block__items
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc HTML5
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc CSS3
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc JavaScript & jQuery
+				.skill-block
+					.skill-block__title Backend
+					ul.skill-block__items
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc PHP
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc mySQL
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc Node.js & npm
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc Mongo.db
+				.skill-block
+					.skill-block__title WorkFlow
+					ul.skill-block__items
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc Git
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc Gulp
+						li.skill-block__item
+							svg.skill-block__circle
+								circle(cx="50" cy="50" r="40").skill-block__circle-under
+								circle(cx="50" cy="50" r="40").skill-block__circle-above
+							.skill-block__desc Bower
+		.map-section
+			.contacts
+				.content
+					.content__title контакты
+					ul.contacts__items
+						li.contacts__item
+							a.contacts__item-content(href="#")
+								.contacts__item-pic
+									svg.contacts__item-img
+										use.social__pic(xlink:href="assets/img/sprite.svg#skype")
+								.contacts__item-text skype_kdn
+						li.contacts__item
+							a.contacts__item-content(href="#")
+								.contacts__item-pic
+									svg.contacts__item-img
+										use.social__pic(xlink:href="assets/img/sprite.svg#envelope")
+								.contacts__item-text astahov@gmail.com
+						li.contacts__item
+							a.contacts__item-content(href="#")
+								.contacts__item-pic
+									svg.contacts__item-img
+										use.social__pic(xlink:href="assets/img/sprite.svg#phone")
+								.contacts__item-text +7 931 200 93 24
+						li.contacts__item
+							a.contacts__item-content(href="#")
+								.contacts__item-pic
+									svg.contacts__item-img
+										use.social__pic(xlink:href="assets/img/sprite.svg#map_marker")
+								.contacts__item-text г.Новосибирск, ул. Инская, д. 5
+		.footer
+			.footer__top
+				ul.nav__items
+					li.nav__item
+						a.nav__link(href="#")
+							.nav__link-text Мои работы
+					li.nav__item
+						a.nav__link(href="#")
+							.nav__link-text Обо мне
+					li.nav__item
+						a.nav__link(href="#")
+							.nav__link-text Блог
+					li.nav__item
+						a.nav__link(href="#")
+							.nav__link-text Авторизация
+				ul.footer-social
+					li.footer-social__item
+						a.footer-social__link(href="#")
+							svg.footer-social__item-img
+								use.footer-social__pic(xlink:href="assets/img/sprite.svg#vk_round")
+					li.footer-social__item
+						a.footer-social__link(href="#")
+							svg.footer-social__item-img
+								use.footer-social__pic(xlink:href="assets/img/sprite.svg#github_round")
+					li.footer-social__item
+						a.footer-social__link(href="#")
+							svg.footer-social__item-img
+								use.footer-social__pic(xlink:href="assets/img/sprite.svg#in_round")
+
+			.footer__bot
+				.footer__desc Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
+				.footer__copy © Владимир Астахов | создано с любовью в LoftSchool | 2016
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
