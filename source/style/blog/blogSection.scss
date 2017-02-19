@@ -2,6 +2,10 @@
   height: 396px;
 }
 
+.blog-body{
+  font-size: 0;
+}
+
 .blog-user__title{
   text-align: center;
 }
@@ -56,6 +60,8 @@
 
 .blog-nav{
   width: 310px;
+  display: inline-block;
+  vertical-align: top;
 
 }
 
@@ -72,6 +78,8 @@
   color: #455a64;
   border-right: 3px solid transparent;
   list-style: none;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .blog-nav__item:hover{
@@ -81,11 +89,67 @@
 
 .blog-nav__link{
   display: block;
-  height: 100%;
   text-align: right;
   padding-left: 40px;
   box-sizing: border-box;
   padding-right: 15px;
   text-decoration: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+.blog-nav__item_active{
+  color: #00bfa5;
+  border-color: #00bfa5;
+}
+
+.blog-content{
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 790px;
+  padding-top: 69px;
+  margin-left: 100px;
+
+}
+
+.content__item{
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+  border-bottom:5px solid #f1f1f2;
+}
+
+.content__item_end{
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+  border-bottom:none;
+
+}
+
+.content__item-title{
+  font-family: 'BERNIERRegular-Regular';
+  font-size: 35px;
+  color: #455a64;
+  padding-bottom: 30px;
+}
+
+.content__item-date{
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  color: #00bfa5;
+  padding-bottom: 30px;
+}
+
+.content__item-desc-text{
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  color: #455a64;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
 
