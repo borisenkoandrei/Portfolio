@@ -92,8 +92,8 @@ $green: #10c1a8;
 }
 
 .skill-block__circle {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   display: block;
   fill: transparent;
   stroke-width: 15;
@@ -101,10 +101,12 @@ $green: #10c1a8;
 
 .skill-block__circle-under {
   stroke: #dfdcd5;
+  stroke-width: 20;
 }
 
 .skill-block__circle-above {
   stroke: $green;
+  stroke-width: 20;
   stroke-dasharray: 650 722;
 }
 
@@ -242,7 +244,7 @@ $green: #10c1a8;
 .nav__items{
   font-size: 0;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 32px;
   position: absolute;
   top: 0;
   left: 0;
@@ -250,7 +252,7 @@ $green: #10c1a8;
 
 .nav__item{
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 44px;
 }
 
 .nav__link{
