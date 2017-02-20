@@ -198,6 +198,14 @@ $green: #10c1a8;
   vertical-align: middle;
 }
 
+.contacts__item-content:hover .contacts__item-img{
+  fill: #00af9b;
+}
+
+.contacts__item-content:hover .contacts__item-text{
+  color: #00af9b;
+}
+
 .contacts__item-img{
   height: 25px;
   width: 25px;
@@ -247,6 +255,9 @@ $green: #10c1a8;
 
 .nav__link{
   text-decoration: none;
+}
+.nav__item:hover .nav__link-text{
+  color: #000000;
 }
 
 .footer-social__item-img{

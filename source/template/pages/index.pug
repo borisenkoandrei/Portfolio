@@ -1,135 +1,33 @@
 extends ../_template
 block content
-	.wrapper
-		.first-section
-			.first-section__content
-				.header.clearfix
-					ul.social
-						li.social__item
-							a.social__link(href = "#")
-								svg.social__img
-									use.pic(xlink:href="assets/img/sprite.svg#vk")
-						li.social__item
-							a.social__link(href = "#")
-								svg.social__img
-									use.pic(xlink:href="assets/img/sprite.svg#github")
-						li.social__item
-							a.social__link(href = "#")
-								svg.social__img
-									use.social__pic(xlink:href="assets/img/sprite.svg#in")
-					.hamburger
-						a.hamburger__link(href = "#")
-							svg.hamburger__img
-								use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
-				.user
+	.wrapper.wrapper_welcome
+		.welcome
+			.welcome_container
+				.user.user__welcome
 					.user__photo-wrapper
 						.user__photo
 							img.user__pic(src="/assets/img/userPhoto.png" alt="User")
-					.user__name Владимир Астахов
-					.user__desc Личный сайт веб разработчика
-				.first-section-bottom.first-section-bottom_work
-					.first-section-bottom__left.first-section-bottom__left_blog
-					.first-section-bottom__right.first-section-bottom__right_blog
-					.title-bg.itle-bg_work
-						.title-text МОИ РАБОТЫ
-		.works-ex
-			.works-ex__left
-				.works-ex__left-content
-					.works-ex__left-content-wrapper
-						.works-ex__left-title Сайт школы онлайн Образования
-						.works-ex__left-skils HTML , CSS, JAVASCRIPT
-						a.left-prewie(href="#")
-							.left-prewie__ico
-								svg.left-prewie__img
-									use.left-prewie__pic(xlink:href="assets/img/sprite.svg#link")
-							.left-prewie__text Посмотреть сайт
-			.works-ex-right
-				.works-ex-right__prewie
-					.works-ex-right__img-wrapper
-						img.works-ex-right__img(src="assets/img/worsPrewie.png")
-				a.works-ex-right__button-down(href="#")
-					svg.button-down__img
-						use.button-down__pic(xlink:href="assets/img/sprite.svg#portf_arrow_down")
-
-				a.works-ex-right__button-up(href="#")
-					svg.button-up__img
-						use.button-up__pic(xlink:href="assets/img/sprite.svg#portf_arrow_up")
-		.speak
-			.title-bg.title-bg_speak
-				.title-text.title-text__speak что обо мне говорят
-			.comment
-				.comment__left
-					.comment__item.left
-						.comment__quote
-							img.comment__quote-img(src="assets/img/quote.png")
-						.comment__desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-						.comment__user
-							.comment__user-photo(style="background-image: url('assets/img/User1.png'); background-position-y: -21px;")
-								.comment__user-img
-							.user__data
-								.comment__user-name Ковальчук Дмитрий
-								.comment__user-position основатель Loftschool
-
-
-				.comment__right
-					.comment__item.rigrt
-						.comment__quote
-							img.comment__quote-img(src="assets/img/quote.png")
-						.comment__desc Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-						.comment__user
-							.comment__user-photo
-								.comment__user-img(style="background-image: url('assets/img/User2.png');")
-							.user__data
-								.comment__user-name Сабанцев Владимир
-								.comment__user-position преподаватель
-				.comment-form
-					.comment-form__title
-						.comment-form__title-text Связаться со мной
-					form.inut-container
-						input.comment-form__name(type="text" placeholder="Имя")
-						input.comment-form__email(type="email" placeholder="Email")
-						textarea.comment-form__message(placeholder="Ваше сообщение")
-						.comment-form__button
-							input.comment-form__send(type="submit" value="Отправить")
-							input.comment-form__clear(type="reset" value="Очистить")
-				a.comment-arrov(href="#")
-					svg.comment-arrov__img
-						use.comment-arrov__pic(xlink:href="assets/img/sprite.svg#portf_arrow_up")
-
-		.footer
-			.footer__top
-				ul.nav__items
-					li.nav__item
-						a.nav__link(href="#")
-							.nav__link-text Мои работы
-					li.nav__item
-						a.nav__link(href="#")
-							.nav__link-text Обо мне
-					li.nav__item
-						a.nav__link(href="#")
-							.nav__link-text Блог
-					li.nav__item
-						a.nav__link(href="#")
-							.nav__link-text Авторизация
-				ul.footer-social
-					li.footer-social__item
-						a.footer-social__link(href="#")
-							svg.footer-social__item-img
-								use.footer-social__pic(xlink:href="assets/img/sprite.svg#vk_round")
-					li.footer-social__item
-						a.footer-social__link(href="#")
-							svg.footer-social__item-img
-								use.footer-social__pic(xlink:href="assets/img/sprite.svg#github_round")
-					li.footer-social__item
-						a.footer-social__link(href="#")
-							svg.footer-social__item-img
-								use.footer-social__pic(xlink:href="assets/img/sprite.svg#in_round")
-
-			.footer__bot
-				.footer__desc Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
-				.footer__copy © Владимир Астахов | создано с любовью в LoftSchool | 2016
-
-
-
-
-
+					.user__name.user__name_welcome Владимир Астахов
+					.user__desc.user__desc_welcome Личный сайт веб разработчика
+				ul.social.social__welcom
+					li.social__item.social__item_welcome
+						a.social__link.social__link_welcome(href="https://vk.com/" target="_blank")
+							svg.social__img.social__img_welcome
+								use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#vk")
+					li.social__item.social__item_welcome
+						a.social__link.social__link_welcome(href="https://github.com/" target="_blank")
+							svg.social__img.social__img_welcome
+								use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#github")
+					li.social__item.social__item_welcome
+						a.social__link.social__link_welcome(href="https://www.linkedin.com" target="_blank")
+							svg.social__img.social__img_welcome
+								use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#in")
+				ul.welcome-buttons
+					li.welcome-button
+						a.welcome-button__content.welcome-button__content_border-none(href="portfolio.html") Мои работы
+					li.welcome-button
+						a.welcome-button__content(href="about.html") Обо мне
+					li.welcome-button
+						a.welcome-button__content(href="blog.html") Блог
+	a.authorization(href="#") Авторизация
+	.footer__copy_welcome © Владимир Астахов | создано с любовью в LoftSchool | 2016
