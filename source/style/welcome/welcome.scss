@@ -39,7 +39,7 @@
 .social__welcom{
   display: inline-block;
   float: none;
-  padding-left: 25px;
+  padding-left: 16px;
   padding-top: 37px;
 }
 
@@ -52,7 +52,7 @@
 
 .social__item_welcome{
   padding-left: 0;
-  padding-right: 25px;
+  padding-right: 16px;
 }
 
 .welcome-buttons{
@@ -66,7 +66,7 @@
 
 .welcome-button {
   display: inline-block;
-  width: 33.33%;
+  //width: 33.33%;
 }
 
 .welcome-button__content{
@@ -101,7 +101,7 @@
 
 .authorization{
   color: #ffffff;
-  padding: 15px 30px;
+  padding: 13px 27px;
   position: absolute;
   right: 20px;
   top: 25px;
@@ -129,4 +129,16 @@
   display: inline-block;
   font-family: 'Roboto-Light';
   font-size: 15px;
+}
+
+.welcome-button_portfolio{
+  width: 154px;
+}
+
+.welcome-button_about{
+  width: 128px;
+}
+
+.welcome-button_blog{
+  width: 98px;
 }
