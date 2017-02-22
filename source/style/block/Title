@@ -1,0 +1,69 @@
+.title-bg{
+	background-image: url("../img/sprite/about_header.svg");
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-height: 130px;
+	text-align: center;
+	position: relative;
+	top: 73px;
+	&_work {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("../img/sprite/works_header.svg");
+	}
+	&_speak{
+		top: 0;
+		padding-bottom: 63px ;
+		height: 187px;
+	}
+}
+
+.title-text{
+	font-family:'BERNIERRegular-Regular';
+	font-size: 63px;
+	max-width: 90%;
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	white-space: pre-line;
+	vertical-align: middle;
+	&_little{
+		font-size: 35px;
+		text-align: center;
+		margin-top: 29px;
+	}
+	&:after{
+		content: "";
+		width: 22px;
+		height: 5px;
+		background-color: #c3c4c0;
+		position: absolute;
+		position: absolute;
+		right: -37px;
+		top: 49%;
+		transform: translateY(-50%);
+	}
+	&:before{
+		content: "";
+		width: 22px;
+		height: 5px;
+		background-color: #c3c4c0;
+		position: absolute;
+		position: absolute;
+		left: -38px;
+		top: 49%;
+		transform: translateY(-50%);
+	}
+	&_speak{
+		width: 400px;
+		top: 22%;
+		left: 50%;
+		transform: translateX(-50%);
+		background-size: inherit;
+		background-position-y: 26px;
+	}
+}

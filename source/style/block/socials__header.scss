@@ -1,0 +1,33 @@
+.social{
+	padding-top: 31px;
+	padding-left: 30px;
+	font-size: 0;
+	list-style-type: none;
+	float: left;
+
+	&__item{
+		display: inline-block;
+		padding-right: 24px;
+	}
+
+	&__link{
+		display: block;
+	}
+
+	&__img{
+		display: inline-block;
+		width: 31px;
+		margin: 0;
+		fill: #c1d6d6;
+		height: 22px;
+
+		&:hover{
+			fill: #fff;
+		}
+	}
+	&__pic{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}

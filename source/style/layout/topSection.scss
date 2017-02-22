@@ -1,0 +1,73 @@
+.header{
+	@include clearfix;
+}
+
+.first-section{
+	background-image: url("../img/firstSection_bg.png");
+	height: 785px;
+	position: relative;
+	&__content{
+		width: 100%;
+		height: 100%;
+	}
+	&_blog{
+		height: 396px;
+	}
+}
+
+.portfolio-bg__img{
+	width: 100%;
+	height: 285px;
+	position: absolute;
+	top: 285px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-image: url("../img/sprite/portfolio_header.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1128px;
+	z-index: 1;
+}
+
+
+.first-section-bottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	height: 295px;
+	font-size: 0;
+	white-space: nowrap;
+	&__left{
+		display: inline-block;
+		background-image: url("../img/sprite/about_bg_left.svg");
+		height: 100%;
+		width: 50%;
+		position: relative;
+		vertical-align: bottom;
+		&_blog{
+			background-image: url("../img/sprite/about_bg_left_white.svg");
+
+		}
+	}
+	&__right{
+		display: inline-block;
+		background-image: url("../img/sprite/about_bg_right.svg");
+		height: 100%;
+		width: 50%;
+		position: relative;
+		vertical-align: bottom;
+
+		&_blog{
+			background-image: url("../img/sprite/about_bg_right_white.svg");
+
+		}
+	}
+	&_blog{
+		height: 107px;
+	}
+	&_work{
+		height: 290px;
+	}
+
+}

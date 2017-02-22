@@ -1,0 +1,23 @@
+.second-section{
+	width: 100%;
+	height: 730px;
+	font-size: 0;
+
+	&__left{
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		background-color: #efeee9;
+		position: relative;
+		vertical-align: top;
+	}
+
+	&__right{
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		background-color: #eeebdf;
+		vertical-align: top;
+	}
+
+}

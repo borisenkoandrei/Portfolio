@@ -1,0 +1,70 @@
+.works-ex-slider{
+	&__prewie{
+		height: 525px;
+		width: 600px;
+		background-color: #efebe0;
+		position: relative;
+	}
+
+	&__img-wrapper{
+		position: absolute;
+		top: 51%;
+		left: 49%;
+		transform: translate(-50%,-50%);
+	}
+
+	&__button-down{
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		width: 300px;
+		height: 225px;
+		background-image: url("../img/bgDown.png");
+		background-position: center center ;
+
+		&:hover{
+			background-color: #efebe0;
+			background-image: none;
+			transition: 3s;
+		}
+	}
+
+	&__button-up{
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		width: 300px;
+		height: 225px;
+		background-image: url("../img/bgUP.png");
+		background-position: center center ;
+
+		&:hover{
+			background-color: #efebe0;
+			background-image: none;
+			transition: 3s;
+		}
+	}
+}
+
+
+
+
+.button-down__img{
+	width: 43px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	fill: #fff;
+}
+
+.button-up__img{
+	width: 43px;
+	height: 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	fill: #fff;
+}

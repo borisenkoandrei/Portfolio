@@ -4,7 +4,7 @@ block content
 		.first-section
 			.portfolio-bg__img
 			.first-section__content
-				.header.clearfix
+				.header
 					ul.social
 						li.social__item
 							a.social__link(href = "#")
@@ -31,7 +31,7 @@ block content
 				.first-section-bottom.first-section-bottom_work
 					.first-section-bottom__left.first-section-bottom__left_blog
 					.first-section-bottom__right.first-section-bottom__right_blog
-					.title-bg.itle-bg_work
+					.title-bg.title-bg_work
 						.title-text МОИ РАБОТЫ
 		.works-ex
 			.works-ex__left
@@ -39,28 +39,28 @@ block content
 					.works-ex__left-content-wrapper
 						.works-ex__left-title Сайт школы онлайн Образования
 						.works-ex__left-skils HTML , CSS, JAVASCRIPT
-						a.left-prewie(href="#")
-							.left-prewie__ico
-								svg.left-prewie__img
-									use.left-prewie__pic(xlink:href="assets/img/sprite.svg#link")
-							.left-prewie__text Посмотреть сайт
-			.works-ex-right
-				.works-ex-right__prewie
-					.works-ex-right__img-wrapper
-						img.works-ex-right__img(src="assets/img/worsPrewie.png")
-				a.works-ex-right__button-down(href="#")
+						a.works-ex__prewie(href="#")
+							.works-ex__prewie-ico
+								svg.works-ex__prewie-img
+									use.works-ex__prewie-pic(xlink:href="assets/img/sprite.svg#link")
+							.works-ex__prewie-text Посмотреть сайт
+			.works-ex__right
+				.works-ex-slider__prewie
+					.works-ex-slider__img-wrapper
+						img.works-ex-slider__img(src="assets/img/worsPrewie.png")
+				a.works-ex-slider__button-down(href="#")
 					svg.button-down__img
 						use.button-down__pic(xlink:href="assets/img/sprite.svg#portf_arrow_down")
 
-				a.works-ex-right__button-up(href="#")
+				a.works-ex-slider__button-up(href="#")
 					svg.button-up__img
 						use.button-up__pic(xlink:href="assets/img/sprite.svg#portf_arrow_up")
 		.speak
 			.title-bg.title-bg_speak
-				.title-text.title-text__speak что обо мне говорят
+				.title-text.title-text_speak что обо мне говорят
 			.comment
 				.comment__left
-					.comment__item.left
+					.comment__item.comment__item_left
 						.comment__quote
 							img.comment__quote-img(src="assets/img/quote.png")
 						.comment__desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -73,7 +73,7 @@ block content
 
 
 				.comment__right
-					.comment__item.rigrt
+					.comment__item.comment__item_rigrt
 						.comment__quote
 							img.comment__quote-img(src="assets/img/quote.png")
 						.comment__desc Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
@@ -83,19 +83,19 @@ block content
 							.user__data
 								.comment__user-name Сабанцев Владимир
 								.comment__user-position преподаватель
-				.comment-form
-					.comment-form__title
-						.comment-form__title-text Связаться со мной
-					form.inut-container
-						input.comment-form__name(type="text" placeholder="Имя")
-						input.comment-form__email(type="email" placeholder="Email")
-						textarea.comment-form__message(placeholder="Ваше сообщение")
-						.comment-form__button
-							input.comment-form__send(type="submit" value="Отправить")
-							input.comment-form__clear(type="reset" value="Очистить")
-				a.comment-arrov(href="#")
-					svg.comment-arrov__img
-						use.comment-arrov__pic(xlink:href="assets/img/sprite.svg#portf_arrow_up")
+			.feedback.feedback_position
+				.feedback__title
+					.feedback__title-text Связаться со мной
+				form.feedback_form
+					input.feedback_form__name(type="text" placeholder="Имя")
+					input.feedback_form__email(type="email" placeholder="Email")
+					textarea.feedback_form__message(placeholder="Ваше сообщение")
+					.feedback_form__button
+						input.feedback_form__send(type="submit" value="Отправить")
+						input.feedback_form__reset(type="reset" value="Очистить")
+			a.arrow(href="#")
+				svg.arrow__img
+					use.arrow__pic(xlink:href="assets/img/sprite.svg#portf_arrow_up")
 
 		.footer
 			.footer__top

@@ -1,0 +1,99 @@
+.works-ex {
+	&__left-content {
+		width: 420px;
+		height: 255px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__left-content-wrapper {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+	&__left-title {
+		display: inline-block;
+		text-transform: uppercase;
+		font-family: 'BERNIERRegular-Regular';
+		font-size: 35px;
+		position: relative;
+		width: 272px;
+		margin-bottom: 33px;
+	}
+
+	&__left-title:before {
+		content: "";
+		width: 22px;
+		height: 5px;
+		background-color: #c3c4c0;
+		position: absolute;
+		left: -38px;
+		top: 20%;
+		transform: translateY(-50%);
+	}
+
+	&__left-title:after {
+		content: "";
+		width: 22px;
+		height: 5px;
+		background-color: #c3c4c0;
+		position: absolute;
+		position: absolute;
+		right: -37px;
+		top: 20px;
+		transform: translateY(-50%);
+	}
+
+	&__left-skils {
+		width: 100%;
+		font-family: 'Roboto-Medium';
+		color: #20b5a1;
+		font-size: 16px;
+		box-sizing: border-box;
+		border-top: 1px solid #20b5a1;
+		border-bottom: 1px solid #20b5a1;
+		padding-top: 17px;
+		padding-bottom: 16px;
+		margin-bottom: 40px;
+	}
+
+	&__prewie {
+		background-color: #00bfa5;
+		display: inline-block;
+		padding: 14px 20px;
+		border-radius: 4px;
+		text-decoration: none;
+	}
+
+	&__prewie:hover .works-ex__prewie-text {
+		color: #000000;
+	}
+
+	&__prewie:hover .works-ex__prewie-ico {
+		fill: #000000;
+	}
+
+	&__prewie-ico {
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 15px;
+		fill: #fff;
+		padding-right: 9px;
+	}
+
+	&__prewie-img {
+		width: 20px;
+		height: 18px;
+	}
+
+	&__prewie-text {
+		display: inline-block;
+		vertical-align: middle;
+		font-family: 'Roboto-Medium';
+		font-size: 16px;
+		color: #fff;
+	}
+}

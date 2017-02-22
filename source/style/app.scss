@@ -1,10 +1,37 @@
+$greenlight:#00bfa5;
+$greendarc:#009688;
+$white: #efeee9;
+$beige: #eeebdf;
+$green: #10c1a8;
+
+
+
 @import 'common/adjustment';
 @import 'common/fonts';
 @import "normalize";
-//index
+@import "mixin";
 
-@import 'sections/firstSection';
+//index
 @import 'sections/secondSection';
 @import 'blog/blogSection.scss';
-@import 'portfolio/portfolio';
 @import 'welcome/welcome';
+
+//block
+@import "block/socials__header";
+@import "block/hamburger";
+@import "block/Title";
+@import "block/User";
+@import "block/workDescription";
+@import "block/workSlider";
+@import "block/feedback";
+@import "block/arrow";
+@import "block/comment";
+@import "block/aboutMe";
+
+
+//layout
+@import "layout/topSection";
+@import "layout/work";
+@import "layout/speak";
+@import "layout/secondSection";
+

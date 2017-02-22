@@ -1,0 +1,19 @@
+.hamburger{
+	float: right;
+	padding-top: 28px;
+	padding-right: 30px;
+
+	&__link{
+		display: block;
+	}
+
+	&__img{
+		fill: #c1d6d6;
+		width: 40px;
+		height: 35px;
+
+		&:hover{
+			fill: #fff;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.user {
+	@include alignmentX;
+	top: 154px;
+	min-width: 280px;
+	z-index: 2;
+
+	&__wrapper {
+		position: relative;
+
+	}
+
+	&__photo-wrapper {
+		margin-bottom: 24px;
+		&_blog{
+			margin-bottom: 18px;
+		}
+	}
+
+	&__photo {
+		width: 140px;
+		height: 140px;
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	&__pic {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__name {
+		color: #ffffff;
+		font-family: 'Roboto-Medium';
+		font-size: 33px;
+		text-align: center;
+		margin-bottom: 7px;
+	}
+
+	&__desc {
+		font-family: 'Roboto-Light';
+		font-size: 16px;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	&_blog-bg{
+		background-image: url("../img/sprite/blog_header.svg");
+		background-position: center 100px;
+		background-repeat: no-repeat;
+		width: 300px;
+		height: 300px;
+		top: 83px;
+	}
+}
