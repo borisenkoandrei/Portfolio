@@ -4,17 +4,10 @@ $white: #efeee9;
 $beige: #eeebdf;
 $green: #10c1a8;
 
-
-
 @import 'common/adjustment';
 @import 'common/fonts';
 @import "normalize";
 @import "mixin";
-
-//index
-@import 'sections/secondSection';
-@import 'blog/blogSection.scss';
-@import 'welcome/welcome';
 
 //block
 @import "block/socials__header";
@@ -27,11 +20,23 @@ $green: #10c1a8;
 @import "block/arrow";
 @import "block/comment";
 @import "block/aboutMe";
-
+@import "block/skills";
+@import "block/contacts";
+@import "block/nav";
+@import "block/social-round";
+@import "block/nav-blog";
+@import "block/blog-content";
+@import "block/User-title";
+@import "block/welcome";
 
 //layout
 @import "layout/topSection";
 @import "layout/work";
 @import "layout/speak";
 @import "layout/secondSection";
+@import "layout/map";
+@import "layout/footer";
+@import "layout/blog";
+
+
 

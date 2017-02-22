@@ -2,6 +2,14 @@
   width: 1200px;
   height: 100%;
   margin: 0 auto;
+
+  &_welcome{
+    width: 100%;
+    background-image: url("../img/firstSection_bg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  }
 }
 
 body{

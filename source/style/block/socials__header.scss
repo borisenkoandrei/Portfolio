@@ -5,13 +5,29 @@
 	list-style-type: none;
 	float: left;
 
+	&_welcom{
+      display: inline-block;
+      float: none;
+      padding-left: 16px;
+      padding-top: 37px;
+    }
+
 	&__item{
 		display: inline-block;
 		padding-right: 24px;
+
+      &_welcome{
+        padding-left: 0;
+        padding-right: 16px;
+      }
 	}
 
 	&__link{
 		display: block;
+
+      &_welcome:hover .social__pic_welcome{
+        fill: #068981;
+      }
 	}
 
 	&__img{
@@ -28,6 +44,10 @@
 	&__pic{
 		display: inline-block;
 		vertical-align: middle;
+
+      &_welcome{
+        fill:#73d4c8;
+      }
 	}
 
 }

@@ -1,0 +1,46 @@
+.blog-user{
+  &__title{
+    text-align: center;
+  }
+
+  &__title-text{
+    display: inline-block;
+    position: relative;
+    font-family: 'BERNIERRegular-Regular';
+    text-transform: uppercase;
+    color: #fff;
+    font-size:63px;
+
+    &:after{
+      content: "";
+      width: 22px;
+      height: 5px;
+      background-color: #c3c4c0;
+      position: absolute;
+      position: absolute;
+      right: -44px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:before{
+      content: "";
+      width: 22px;
+      height: 5px;
+      background-color: #c3c4c0;
+      position: absolute;
+      position: absolute;
+      left: -44px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__title-desc{
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    color: #ffffff;
+  }
+}

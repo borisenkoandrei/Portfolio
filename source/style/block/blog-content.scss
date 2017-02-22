@@ -1,0 +1,35 @@
+.blog-content{
+  &__item{
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+    border-bottom:5px solid #f1f1f2;
+  }
+
+  &__item-end{
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    border-bottom:none;
+  }
+
+  &__item-title{
+    font-family: 'BERNIERRegular-Regular';
+    font-size: 35px;
+    color: #455a64;
+    padding-bottom: 14px;
+    width: 684px;
+  }
+
+  &__item-desc{
+    width: 682px;
+    line-height: 1.6;
+  }
+
+  &__item-desc-text{
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    color: #455a64;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+}

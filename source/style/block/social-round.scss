@@ -1,0 +1,32 @@
+.social-round{
+  font-size: 0;
+
+  &_position{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 17px;
+    padding-right: 30px;
+  }
+
+  &__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  &__link{
+    text-decoration: none;
+  }
+
+  &__item-img{
+    fill: transparent;
+    stroke: #fff;
+    width: 36px;
+    height: 36px;
+
+    &:hover{
+      fill: #fff;
+    }
+  }
+}

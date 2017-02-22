@@ -1,0 +1,18 @@
+.blog{
+  font-size: 0;
+
+  &__left{
+    width: 310px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__right{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 790px;
+    padding-top: 69px;
+    margin-left: 100px;
+  }
+}
