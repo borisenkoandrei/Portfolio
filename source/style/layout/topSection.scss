@@ -35,7 +35,7 @@
 	bottom: 0px;
 	left: 0;
 	right: 0;
-	height: 295px;
+	height: 106px;
 	font-size: 0;
 	white-space: nowrap;
 	&__left{
@@ -45,6 +45,7 @@
 		width: 50%;
 		position: relative;
 		vertical-align: bottom;
+		background-size: cover;
 		&_blog{
 			background-image: url("../img/sprite/about_bg_left_white.svg");
 
@@ -57,6 +58,7 @@
 		width: 50%;
 		position: relative;
 		vertical-align: bottom;
+		background-size: cover;
 
 		&_blog{
 			background-image: url("../img/sprite/about_bg_right_white.svg");

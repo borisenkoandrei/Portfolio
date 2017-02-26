@@ -30,23 +30,24 @@ block content
 					.user__desc Личный сайт веб разработчика
 				.first-section-bottom
 					.first-section-bottom__left
-						.title-bg
-							.title-text ОБО МНЕ
 					.first-section-bottom__right
-						.title-text.title-text_little
-							| Чем я могу быть!{br}
-							| вам полезен
 		.second-section
 			.second-section__left
+				.title-bg
+					.title-text ОБО МНЕ
 				.about-me
 					.about-me__photo-wrapper
 						.about-me__photo(style="background-image:url('/assets/img/right-col_user-photo.png')")
 					.about-me__title
-						.title-text Кто я
+						.title-text.title-text_about-me Кто я
 					.about-me__description
 						p.about-me__par Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
 						p.about-me__par Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
 			.second-section__right
+				.title-bg.title-bg_little
+					.title-text.title-text_little
+						| Чем я могу быть!{br}
+						| вам полезен
 				.skills
 					.skills__desc
 						p.skills__desc-content Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
@@ -138,7 +139,7 @@ block content
 									svg.contacts__item-img
 										use.contacts__pic(xlink:href="assets/img/sprite.svg#map_marker")
 								.contacts__item-text г.Новосибирск, ул. Инская, д. 5
-		.footer
+		.footer.footer_about
 			.footer__top
 				ul.nav.nav_footer
 					li.nav__item
@@ -168,8 +169,10 @@ block content
 								use.social-round__pic(xlink:href="assets/img/sprite.svg#in_round")
 
 			.footer__bot
-				.footer__desc Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
-				.footer__copy © Владимир Астахов | создано с любовью в LoftSchool | 2016
+				.footer__bot-left
+					.footer__desc Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
+				.footer__bot-right
+					.footer__copy © Владимир Астахов | создано с любовью в LoftSchool | 2016
 
 
 

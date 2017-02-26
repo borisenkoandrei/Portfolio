@@ -23,6 +23,9 @@
     width: 682px;
     line-height: 1.6;
   }
+  &__item-code{
+    background-image: url("/assets/img/code.png");
+  }
 
   &__item-desc-text{
     font-family: 'Roboto-Regular';

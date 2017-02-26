@@ -14,6 +14,10 @@
     margin-right: 44px;
     list-style: none;
 
+    &:last-child{
+      margin-right: 0;
+    }
+
     &:hover .nav__link-text{
       color: #000000;
     }

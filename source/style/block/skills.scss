@@ -25,13 +25,17 @@
 
   &__items{
     text-align: left;
-    padding-top: 20px;
   }
 
   &__item{
     display: inline-block;
     position: relative;
     margin-right: 20px;
+    margin-top: 20px;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
 
   &__circle {
