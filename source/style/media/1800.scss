@@ -1,0 +1,132 @@
+@media screen and (min-width: 1800px){
+
+	.first-section{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.user__name{
+		font-size: 35px;
+	}
+
+	.title-bg{
+		width: 50%;
+		float: left;
+	}
+
+	.second-section{
+		height: 850px;
+	}
+
+	.about-me {
+		width: 50%;
+		margin: auto;
+		float: right;
+		padding-right: 20px;
+		padding-top: 50px;
+		box-sizing: border-box;
+	}
+
+	.about-me__title{
+		height: 35px;
+	}
+
+	.title-text_about-me{
+		font-size: 35px;
+	}
+
+	.title-bg_little{
+		width: 100%;
+	}
+
+	.skills-set{
+		margin-bottom: 40px;
+	}
+
+	.skills-set__circle{
+		width: 120px;
+		height: 120px;
+	}
+
+	.map-section{
+		height: 925px;
+	}
+
+	//WORK
+
+	.title-bg_work{
+		width: 100%;
+	}
+
+	.works-ex-slider__prewie{
+		width: 100%;
+	}
+
+	.works-ex-slider__button-down{
+		width: 50%;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+
+	.works-ex-slider__button-up{
+		width: 50%;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+
+	.speak{
+		background-position: center;
+		background-size: cover;
+	}
+
+	.title-bg_speak{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+
+	//blog
+
+	.blog__left{
+		width: 22%;
+
+	}
+
+	.blog__right{
+		width: 78%;
+		margin-left: 0;
+		padding-left: 120px;
+	}
+
+	.blog-content__item{
+		width: 75%;
+	}
+
+	.blog-content__item-title{
+		padding: 0;
+		margin-right: 0;
+		margin-bottom: 29px;
+		width: 90%;
+
+	}
+
+	.blog-content__item-date{
+		color: #00bfa5;
+		font-size: 16px;
+		margin-bottom: 30px;
+
+	}
+
+	.blog-content__item-desc{
+		width: 90%;
+		margin-right: 0;
+	}
+
+	.blog-content__item-code{
+		width: 100%;
+		height: 125px;
+		background-repeat: no-repeat;
+		background-size:contain;
+	}
+
+}

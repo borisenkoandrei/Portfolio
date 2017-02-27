@@ -2,7 +2,7 @@
   font-size: 0;
 
   &__left{
-    width: 310px;
+    width: 25%;
     display: inline-block;
     vertical-align: top;
   }
@@ -11,8 +11,8 @@
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-    width: 790px;
+    width: 75%;
     padding-top: 69px;
-    margin-left: 100px;
+    padding-left: 100px;
   }
 }

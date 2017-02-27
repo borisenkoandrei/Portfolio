@@ -1,12 +1,18 @@
 @media screen and (max-width:768px){
   //about
   .wrapper{
-    width: 768px;
+    width: 100%;
   }
 
   .first-section{
     height: 505px;
   }
+
+  .first-section_portfolio{
+    height: 640px;
+  }
+
+
 
   .first-section_blog{
     height: 510px;
@@ -22,6 +28,10 @@
 
   .first-section-bottom{
     height: 69px;
+  }
+
+  .first-section-bottom_work{
+    height: 165px;
   }
 
   .first-section-bottom_blog{
@@ -45,7 +55,8 @@
   }
 
   .about-me{
-    width: 475px;
+    width: 75%;
+    max-width: 475px;
   }
 
   .about-me__par{
@@ -72,7 +83,8 @@
   }
 
   .skills__desc-content{
-    width: 475px;
+    width: 75%;
+    max-width: 475px;
     padding: 0;
     margin: auto;
     font-size: 14px;
@@ -258,6 +270,21 @@
   .comment__right{
     height: inherit;
   }
+
+  .title-bg_speak{
+    height: 133px;
+    padding: 0;
+  }
+
+  .title-text_speak{
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+
+
+
 
 
 
