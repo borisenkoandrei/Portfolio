@@ -1,0 +1,39 @@
+@media screen and (max-width:628px){
+
+	.comment{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.comment__left{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.comment__item_left{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.comment__quote{
+		text-align: center;
+	}
+
+	.comment__right{
+		width: 100%;
+	}
+
+	.comment__desc{
+		font-size: 14px;
+		padding-bottom: 15px;
+	}
+
+	.comment__user-name{
+		font-size: 14px;
+	}
+
+	.comment__user-position{
+		font-size: 14px;
+	}
+}
+

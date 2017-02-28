@@ -38,6 +38,10 @@
     height: 56px;
   }
 
+  .second-section{
+    display: block;
+  }
+
   .second-section__left{
     width: 100%;
   }
@@ -67,11 +71,12 @@
 
   .about-me__title{
     height: 30px;
+    margin-bottom: 20px;
   }
 
   .title-text_about-me{
     font-size: 30px;
-    margin-bottom: 20px;
+
   }
 
   .about-me__photo{
@@ -224,6 +229,22 @@
     padding-top: 45px;
     padding-bottom: 60px;
 
+  }
+
+  .works-ex__left-content{
+    width: 100%;
+  }
+
+  .works-ex__left-title{
+    font-size: 30px;
+    width: initial;
+
+  }
+
+  .works-ex__left-skils{
+    width: 56%;
+    margin: auto;
+    margin-bottom: 40px;
   }
 
   .works-ex__right{

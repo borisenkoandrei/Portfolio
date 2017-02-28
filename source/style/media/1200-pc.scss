@@ -1,5 +1,31 @@
 @media screen and (max-width: 1200px){
-  //.wrapper{
-  //  width: 1200px;
-  //}
+	.second-section{
+		display: flex;
+
+	}
+
+	.second-section__left{
+		height: inherit;
+	}
+
+	.second-section__right{
+		height: inherit;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+	.second-section{
+		display: flex;
+
+	}
+
+	.second-section__left{
+		height: inherit;
+	}
+
+	.second-section__right{
+		height: inherit;
+	}
+
 }

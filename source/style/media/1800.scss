@@ -85,6 +85,19 @@
 		margin-bottom: 40px;
 	}
 
+	.title-text_speak{
+		width: 280px;
+
+		&:before{
+			top: 35px;
+		}
+
+		&:after{
+			top: 35px;
+		}
+
+	}
+
 	//blog
 
 	.blog__left{

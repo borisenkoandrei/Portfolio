@@ -4,6 +4,8 @@
 
 .first-section{
 	background-image: url("../img/firstSection_bg.png");
+	background-position: center;
+	background-size: cover;
 	height: 785px;
 	position: relative;
 	&__content{
