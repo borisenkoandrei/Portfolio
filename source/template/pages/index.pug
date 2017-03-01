@@ -1,54 +1,98 @@
 extends ../_template
 block content
-	.wrapper.wrapper_welcome
-		ul(id="scene")
-			li(class="layer" data-depth="0.00")
-				img(src="assets/img/favicon/layer1.png")
-			li(class="layer" data-depth="0.20")
-				img(src="assets/img/favicon/layer2.png")
-			li(class="layer" data-depth="0.40")
-				img(src="assets/img/favicon/layer3.png")
-			li(class="layer" data-depth="0.60")
-				img(src="assets/img/favicon/layer4.png")
-			li(class="layer" data-depth="0.80")
-				img(src="assets/img/favicon/layer5.png")
-			li(class="layer" data-depth="1.00")
-				img(src="assets/img/favicon/layer6.png")
-			li(class="layer" data-depth="1.00")
-				img(src="assets/img/favicon/layer7.png")
-			li(class="layer" data-depth="1.00")
-				img(src="assets/img/favicon/layer8.png")
-			li(class="layer" data-depth="1.00")
-				img(src="assets/img/favicon/layer9.png")
-			li(class="layer" data-depth="1.00")
-				img(src="assets/img/favicon/layer10.png")
+	.wrapper.wrapper__welcome
+		.parallax(id="scene" )
+			.parallax__layer(data-depth="0.00")
+				img(src="assets/img/parallax/10.png")
+			.parallax__layer(data-depth="0.10")
+				img(src="assets/img/parallax/9.png")
+			.parallax__layer(data-depth="0.20")
+				img(src="assets/img/parallax/8.png")
+			.parallax__layer(data-depth="0.30")
+				img(src="assets/img/parallax/7.png")
+			.parallax__layer(data-depth="0.40")
+				img(src="assets/img/parallax/6.png")
+			.parallax__layer(data-depth="0.50")
+				img(src="assets/img/parallax/5.png")
+			.parallax__layer(data-depth="0.60")
+				img(src="assets/img/parallax/4.png")
+			.parallax__layer(data-depth="0.70")
+				img(src="assets/img/parallax/3.png")
+			.parallax__layer(data-depth="0.80")
+				img(src="assets/img/parallax/2.png")
+			.parallax__layer(data-depth="1.00")
+				img(src="assets/img/parallax/1.png")
 		.welcome
-			.welcome_container
-				.user.user_welcome
-					.user__photo-wrapper
-						.user__photo
-							img.user__pic(src="/assets/img/userPhoto.png" alt="User")
-					.user__name.user__name_welcome Владимир Астахов
-					.user__desc.user__desc_welcome Личный сайт веб разработчика
-				ul.social.social_welcom
-					li.social__item.social__item_welcome
-						a.social__link.social__link_welcome(href="https://vk.com/" target="_blank")
-							svg.social__img.social__img_welcome
-								use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#vk")
-					li.social__item.social__item_welcome
-						a.social__link.social__link_welcome(href="https://github.com/" target="_blank")
-							svg.social__img.social__img_welcome
-								use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#github")
-					li.social__item.social__item_welcome
-						a.social__link.social__link_welcome(href="https://www.linkedin.com" target="_blank")
-							svg.social__img.social__img_welcome
-								use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#in")
-				ul.welcome-buttons
-					li.welcome-button.welcome-button_portfolio
-						a.welcome-button__content.welcome-button__content_border-none(href="portfolio.html") Мои работы
-					li.welcome-button.welcome-button_about
-						a.welcome-button__content(href="about.html") Обо мне
-					li.welcome-button.welcome-button_portfolio.welcome-button_blog
-						a.welcome-button__content(href="blog.html") Блог
+			//.welcome_container
+			//	.user.user_welcome
+			//		.user__photo-wrapper
+			//			.user__photo
+			//				img.user__pic(src="/assets/img/userPhoto.png" alt="User")
+			//		.user__name.user__name_welcome Владимир Астахов
+			//		.user__desc.user__desc_welcome Личный сайт веб разработчика
+			//	ul.social.social_welcom
+			//		li.social__item.social__item_welcome
+			//			a.social__link.social__link_welcome(href="https://vk.com/" target="_blank")
+			//				svg.social__img.social__img_welcome
+			//					use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#vk")
+			//		li.social__item.social__item_welcome
+			//			a.social__link.social__link_welcome(href="https://github.com/" target="_blank")
+			//				svg.social__img.social__img_welcome
+			//					use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#github")
+			//		li.social__item.social__item_welcome
+			//			a.social__link.social__link_welcome(href="https://www.linkedin.com" target="_blank")
+			//				svg.social__img.social__img_welcome
+			//					use.social__pic.social__pic_welcome(xlink:href="assets/img/sprite.svg#in")
+			//	ul.welcome-buttons
+			//		li.welcome-button.welcome-button_portfolio
+			//			a.welcome-button__content.welcome-button__content_border-none(href="portfolio.html") Мои работы
+			//		li.welcome-button.welcome-button_about
+			//			a.welcome-button__content(href="about.html") Обо мне
+			//		li.welcome-button.welcome-button_portfolio.welcome-button_blog
+			//			a.welcome-button__content(href="blog.html") Блог
+			.auth_container
+				.auth__title авторизуйтесь
+				form.auth__form
+					.auth__input-text
+						.auth__itput-text-img
+							svg.auth__itput-text-pic
+								use(xlink:href="assets/img/sprite.svg#login")
+						input.auth__input(type="text" placeholder="Логин")
+					.auth__input-text
+						.auth__itput-text-img
+							svg.auth__itput-text-pic
+								use(xlink:href="assets/img/sprite.svg#login")
+						input.auth__input(type="password" placeholder="Пароль")
+					.auth__checkbox-container
+						label.auth__checkbox
+							input.auth_checkbox-fake(type="checkbox")
+							.auth_checkbox-true
+							.auth__checkbox-text Я человек
+					.auth_radio-container
+						.auth_radio-title
+						.auth_radio-items
+							label.auth_radio-item
+								input.auth_radio-input-true
+								.auth_radio-input-false
+								.auth_radio-input-text Да
+							label.auth_radio-item
+								input.auth_radio-input-true
+								.auth_radio-input-false
+								.auth_radio-input-text Да
+					.auth_buttons
+						button.auth_buttons(type="button")
+						button.auth_buttons(type="button")
+
+
+
+
+
+
+
+
+
+
+
 	a.authorization(href="#") Авторизоваться
 	.footer__copy_welcome © Владимир Астахов | создано с любовью в LoftSchool | 2016
+	script(src='/assets/app.js' defer)

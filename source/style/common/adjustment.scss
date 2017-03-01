@@ -5,10 +5,11 @@
   &_welcome{
     width: 100%;
     height: 100%;
-    background-image: url("../img/firstSection_bg.png");
-    background-repeat: no-repeat;
-    background-size:cover;
+    //background-image: url("../img/firstSection_bg.png");
+    //background-repeat: no-repeat;
+    //background-size:cover;
     position: relative;
+    overflow: hidden;
   }
 }
 
