@@ -10,8 +10,6 @@ window.addEventListener('mousemove', function (e) {
         initialX = (window.innerWidth / 2) - pageX,
         initialY = (window.innerHeight / 2) - pageY;
 
-        console.log(pageX);
-
     [].slice.call(layers).forEach(function (layer, i) {
         var layerStyle = layer.style,
             divider = i / 40,
@@ -32,4 +30,19 @@ window.addEventListener('mousemove', function (e) {
 
 //Flipper
 
-var AuthButton = document.querySelector('.')
+var authButton = document.querySelector('.authorization'),
+    flipper = document.querySelector('.flipper'),
+    html = document.getElementsByTagName('html')[0];
+
+
+html.onclick = function (e) {
+    var className = e.target.className;
+
+    console.log(e.target.className);
+
+    if (className == 'authorization'){
+        flipper.style.transform = 'rotateY(180deg)';
+    } else{
+        flipper.style.transform = '';
+    }
+}
