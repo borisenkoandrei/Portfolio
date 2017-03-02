@@ -56,6 +56,7 @@ block content
 					svg.button-up__img
 						use.button-up__pic(xlink:href="assets/img/sprite.svg#portf_arrow_up")
 		.speak
+			img.speak__bg(src="./assets/img/bg_comment.png")
 			.title-bg.title-bg_speak
 				.title-text.title-text_speak что обо мне говорят
 			.comment
@@ -84,15 +85,17 @@ block content
 								.comment__user-name Сабанцев Владимир
 								.comment__user-position преподаватель
 			.feedback.feedback_position
-				.feedback__title
-					.feedback__title-text Связаться со мной
-				form.feedback_form
-					input.feedback_form__name(type="text" placeholder="Имя")
-					input.feedback_form__email(type="email" placeholder="Email")
-					textarea.feedback_form__message(placeholder="Ваше сообщение")
-					.feedback_form__button
-						input.feedback_form__send(type="submit" value="Отправить")
-						input.feedback_form__reset(type="reset" value="Очистить")
+				.feedback__bg
+				.feedback__content
+					.feedback__title
+						.feedback__title-text Связаться со мной
+					form.feedback_form
+						input.feedback_form__name(type="text" placeholder="Имя")
+						input.feedback_form__email(type="email" placeholder="Email")
+						textarea.feedback_form__message(placeholder="Ваше сообщение")
+						.feedback_form__button
+							input.feedback_form__send(type="submit" value="Отправить")
+							input.feedback_form__reset(type="reset" value="Очистить")
 			a.arrow(href="#")
 				svg.arrow__img
 					use.arrow__pic(xlink:href="assets/img/sprite.svg#portf_arrow_up")
@@ -131,8 +134,6 @@ block content
 					.footer__desc Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
 				.footer__bot-right
 					.footer__copy © Владимир Астахов | создано с любовью в LoftSchool | 2016
-
-
-
+			script(src='/assets/app.js' defer)
 
 
