@@ -1,3 +1,5 @@
+//Parallax
+
 var paralaxContainer = document.querySelector('.parallax'),
     layers = paralaxContainer.children;
 
@@ -27,3 +29,7 @@ window.addEventListener('mousemove', function (e) {
     })
 
 });
+
+//Flipper
+
+var AuthButton = document.querySelector('.')

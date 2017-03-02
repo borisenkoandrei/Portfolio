@@ -9,5 +9,12 @@
 		fill: #fff;
 		width: 26px;
 		height: 16px;
+		opacity: 0.7;
+
+		&:hover{
+			opacity: 1;
+		}
+
 	}
+
 }

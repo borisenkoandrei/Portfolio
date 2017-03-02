@@ -107,6 +107,13 @@
 		background-color: #00af9b;
 		border: none;
 		cursor: pointer;
+		transition: 1s;
+		border-right: 1px solid rgba(255,255,255, .4);
+		box-sizing: border-box;
+
+		&:hover{
+			background-color: #009688;
+		}
 	}
 
 	&__reset{
@@ -119,8 +126,13 @@
 		padding-bottom: 17px;
 		padding-left: 55px;
 		padding-right: 55px;
-		background-color: #007978;
+		background-color: #00af9b;
 		border:none;
 		cursor: pointer;
+		transition: 1s;
+
+		&:hover{
+			background-color: #009688;
+		}
 	}
 }

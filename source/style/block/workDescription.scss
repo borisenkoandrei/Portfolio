@@ -67,12 +67,8 @@
 		text-decoration: none;
 	}
 
-	&__prewie:hover .works-ex__prewie-text {
-		color: #000000;
-	}
-
-	&__prewie:hover .works-ex__prewie-ico {
-		fill: #000000;
+	&__prewie:hover{
+		background-color: #009688;
 	}
 
 	&__prewie-ico {
