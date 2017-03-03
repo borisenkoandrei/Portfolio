@@ -1,9 +1,15 @@
 .speak{
 	position: relative;
 	font-size: 0;
-	background-image: url("../img/bg_comment.png");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	//background-image: url("../img/bg_comment.png");
+	//background-position: center;
+	//background-size: contain;
+	//background-repeat: no-repeat;
+	width: 100%;
+}
+
+.speak__bg{
+	position: absolute;
+	height: 100%;
 	width: 100%;
 }

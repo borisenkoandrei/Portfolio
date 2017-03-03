@@ -27,6 +27,7 @@
 //     })
 //
 // });
+
 //
 // //Flipper
 //
@@ -71,6 +72,13 @@ var  parallax = (function () {
     }
 }());
 
+//Flipper
+
+var authButton = document.querySelector('.authorization'),
+    flipper = document.querySelector('.flipper'),
+    html = document.getElementsByTagName('html')[0];
+
+
 window.onscroll = function () {
     var wScroll = window.pageYOffset;
     console.log(wScroll);
@@ -79,3 +87,38 @@ window.onscroll = function () {
 
 
 
+
+    if (className == 'authorization'){
+        flipper.style.transform = 'rotateY(180deg)';
+     } //else{
+    //     flipper.style.transform = '';
+    // }
+}
+
+//blur
+
+var blur = (function () {
+    var wrapper = document.querySelector('.speak'),
+        form = document.querySelector('.feedback__bg');
+
+    return{
+        set: function () {
+            var imgWid = document.querySelector('.speak').offsetWidth,
+                posLeft = -wrapper.offsetLeft,
+                posTop = -wrapper.offsetTop,
+                blurCSS = form.style;
+                console.log(imgWid);
+
+            blurCSS.backgroundSize = imgWid + 'px' + ' ' + 'auto';
+            blurCSS.backgroundPosition = posLeft + 'px' + ' ' + posTop + 'px';
+            
+        }
+    }
+}());
+
+blur.set()
+
+window.onresize = function () {
+    blur.set()
+
+}

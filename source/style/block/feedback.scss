@@ -1,9 +1,27 @@
 .feedback{
-	//min-height: 440px;
-	max-width: 380px;
-	background-color: rgba(195, 183, 179, 0.2);
+	width: 380px;
+	height: 429px;
 	border-radius: 4px;
 	overflow: hidden;
+	position: relative;
+
+	&__bg{
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/bg_comment.png);
+		background-size: 1511px;
+		background-position: -566px -574px;
+		filter: blur(20px);
+	}
+
+	&__content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
 
 	&_position{
 		margin: auto;
