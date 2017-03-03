@@ -107,16 +107,18 @@
 .parallax__layer{
   height: 100%;
   position: absolute;
-  width: 4000px;
-  left: 50%;
-  margin-left: -2000px;
+  //width: 4000px;
+  //left: 50%;
+  //margin-left: -2000px;
 
 
   img{
     position: absolute;
-    top: -50%;
+    //top: -50%;
     //height: 2658px;
     //margin-top: -1329;
+    height: 100%;
+    width: 100%;
   }
 }
 

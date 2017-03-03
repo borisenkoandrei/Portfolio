@@ -3,9 +3,9 @@
 }
 
 .first-section{
-	background-image: url("../img/firstSection_bg.png");
-	background-position: center;
-	background-size: cover;
+	//background-image: url("../img/firstSection_bg.png");
+	//background-position: center;
+	//background-size: cover;
 	height: 785px;
 	position: relative;
 	&__content{
@@ -14,6 +14,20 @@
 	}
 	&_blog{
 		height: 396px;
+	}
+}
+
+.portfolio-main-bg{
+	position: absolute;
+	top: 0;
+	left: -600px;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	height: 130%;
+
+	&__img{
+		height: 900px;
 	}
 }
 
