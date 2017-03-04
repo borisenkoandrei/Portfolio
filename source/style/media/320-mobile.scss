@@ -6,10 +6,11 @@
 
   .wrapper{
     width: 320px;
+    min-height: 570px;
   }
 
   .social{
-    padding-top: 12px;
+    //padding-top: 12px;
     padding-left: 10px;
   }
 
@@ -41,6 +42,8 @@
   }
 
   //USER
+
+
 
   .user__name{
     font-size: 21px;
@@ -383,6 +386,56 @@
     height: 104px;
     background-image: url("/assets/img/code.png");
   }
+
+  //authorization
+
+  .wrapper__welcome{
+    min-height: 500px;
+  }
+
+
+  .authorization{
+    left: 50%;
+    transform: translateX(-50%);
+    right: initial;
+    top: 10px;
+  }
+
+  .welcome{
+    width: 300px;
+  }
+
+  .welcome-button_portfolio{
+    width: 42%;
+  }
+
+  .welcome-button_about{
+    width: 33%;
+  }
+
+  .welcome-button_blog{
+    width: 25%;
+  }
+
+  .user_welcome{
+    top: 0;
+  }
+
+  .footer__copy_welcome{
+    bottom: 10px;
+    width: 77%;
+    text-align: center;
+  }
+
+  .user__photo-wrapper{
+    padding-top: 45px;
+  }
+
+  .auth__input{
+    width: inherit;
+  }
+
+
 
 
 

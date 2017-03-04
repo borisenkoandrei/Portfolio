@@ -302,6 +302,37 @@
     transform: translate(-50%,-50%);
   }
 
+  //Author
+
+  .wrapper__welcome{
+    min-height: 580px;
+  }
+
+  .user_welcome{
+    top: 0;
+  }
+
+  .welcome{
+    width: 350px;
+  }
+
+  .welcome-button_portfolio{
+    width: 42%;
+  }
+
+  .welcome-button_about{
+    width: 33%;
+  }
+
+  .welcome-button_blog{
+    width: 25%;
+  }
+
+  .footer__copy_welcome{
+    text-align: center;
+    bottom: 30px;
+  }
+
 
 
 
