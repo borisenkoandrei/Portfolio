@@ -1,6 +1,17 @@
 extends ../_template
 block content
 	.wrapper
+		.fs__wrapper
+			.fs__bg
+			ul.fs-menu
+				li.fs-menu__item
+					a.fs-menu__link(href="#") Мои работы
+				li.fs-menu__item
+					a.fs-menu__link(href="#") Блог
+				li.fs-menu__item
+					a.fs-menu__link(href="#") Обо мне
+				li.fs-menu__item
+					a.fs-menu__link(href="index.html") Авторизация
 		.first-section.first-section_portfolio
 			.portfolio-main-bg
 				img.portfolio-main-bg__img(src="/assets/img/firstSection_bg.png")
@@ -22,8 +33,9 @@ block content
 									use.social__pic(xlink:href="assets/img/sprite.svg#in")
 					.hamburger
 						a.hamburger__link(href = "#")
-							svg.hamburger__img
-								use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
+							.hamburger__img
+							//svg.hamburger__img
+							//	use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
 				.user
 					.user__photo-wrapper
 						.user__photo
@@ -137,4 +149,3 @@ block content
 				.footer__bot-right
 					.footer__copy © Владимир Астахов | создано с любовью в LoftSchool | 2016
 			script(src='/assets/app.js' defer)
-
