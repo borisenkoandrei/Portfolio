@@ -6,5 +6,6 @@ module.exports = [
 	'./source/js/flipper.js',
 	'./source/js/move.js',
 	'./source/js/parallax.js',
-	'./source/js/msMenu.js'
+	'./source/js/msMenu.js',
+    './source/js/swipe.js'
 ];

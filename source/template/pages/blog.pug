@@ -1,6 +1,17 @@
 extends ../_template
 block content
 	.wrapper
+		.fs__wrapper
+			.fs__bg
+			ul.fs-menu
+				li.fs-menu__item
+					a.fs-menu__link(href="portfolio.html") Мои работы
+				li.fs-menu__item
+					a.fs-menu__link(href="blog.html") Блог
+				li.fs-menu__item
+					a.fs-menu__link(href="about.html") Обо мне
+				li.fs-menu__item
+					a.fs-menu__link(href="index.html") Авторизация
 		.first-section.first-section_blog
 			.first-section__content
 				.header
@@ -19,8 +30,9 @@ block content
 									use.social__pic(xlink:href="assets/img/sprite.svg#in")
 					.hamburger
 						a.hamburger__link(href = "#")
-							svg.hamburger__img
-								use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
+							.hamburger__img
+							//svg.hamburger__img
+							//	use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
 				.user.user_blog-bg
 					.user__photo-wrapper.user__photo-wrapper_blog
 						.user__photo
@@ -33,6 +45,7 @@ block content
 					.first-section-bottom__right.first-section-bottom__right_blog
 		.blog
 			.blog__left
+				.lable
 				ul.blog-nav__items
 					li.blog-nav__item.blog-nav__item_active
 						a.blog-nav__link Самое важное в SASS

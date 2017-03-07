@@ -1,6 +1,17 @@
 extends ../_template
 block content
 	.wrapper
+		.fs__wrapper
+			.fs__bg
+			ul.fs-menu
+				li.fs-menu__item
+					a.fs-menu__link(href="portfolio.html") Мои работы
+				li.fs-menu__item
+					a.fs-menu__link(href="blog.html") Блог
+				li.fs-menu__item
+					a.fs-menu__link(href="about.html") Обо мне
+				li.fs-menu__item
+					a.fs-menu__link(href="index.html") Авторизация
 		.first-section
 			.portfolio-bg__img
 			.first-section__content
@@ -20,8 +31,9 @@ block content
 									use.social__pic(xlink:href="assets/img/sprite.svg#in")
 					.hamburger
 						a.hamburger__link(href = "#")
-							svg.hamburger__img
-								use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
+							.hamburger__img
+							//svg.hamburger__img
+							//	use.hamburger__pic(xlink:href="assets/img/sprite.svg#hamburger")
 				.user
 					.user__photo-wrapper
 						.user__photo

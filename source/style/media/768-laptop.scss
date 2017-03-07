@@ -164,10 +164,31 @@
   //BLOG
 
   .blog__left{
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: fixed;
+    top: 0;
+    left: -90%;
+    background-color: rgb(0, 191, 165);
+	z-index: 10;
+	transition: left 1s;
+	 &_active{
+		 left: 0;
+
+	 }
   }
+	.lable{
+		background-image: url("../img/swipe.png") ;
+		width: 14px;
+		height: 64px;
+		position: absolute;
+		right: -14px;
+		top: 50%;
+	}
+
+
+
+
 
   .blog__right{
     padding-top: 50px;
