@@ -13,20 +13,40 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    
+    &:hover{
+      background-color: #fff;
+    }
+
   }
 
   &__link{
     text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
   }
 
   &__item-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
     fill: transparent;
     stroke: #fff;
-    width: 36px;
-    height: 36px;
-
-    &:hover{
-      fill: #fff;
+    width: 23px;
+    height: 17px;
+    fill: #fff;
     }
-  }
+}
+
+.social-round__item .social-round__item-img{
+  fill: #3d5556;
+
 }

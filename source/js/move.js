@@ -15,9 +15,7 @@ var  parallaxMove = (function () {
             style.top = blockPos - strafe + 'px';
         },
         init: function (wScroll) {
-            this.move(mainBg, 0, wScroll, 0.5);
-            this.move(userBg, 285, wScroll, 0.3);
-            this.move(user, 154, wScroll, 0.2);
+            this.move(mainBg, 0, wScroll, 0.2);
         }
     }
 });

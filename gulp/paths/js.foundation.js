@@ -7,5 +7,6 @@ module.exports = [
 	'./source/js/move.js',
 	'./source/js/parallax.js',
 	'./source/js/msMenu.js',
-    './source/js/swipe.js'
+    './source/js/swipe.js',
+	'./source/js/preloader.js'
 ];

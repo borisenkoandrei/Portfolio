@@ -186,7 +186,17 @@
 		top: 50%;
 	}
 
+  .blog-nav__item{
+    color: rgba(255, 255, 255, 0.7);
 
+    &:hover{
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .blog-nav__item_active{
+    color: #ffffff;
+  }
 
 
 
