@@ -4,6 +4,7 @@
 		width: 100%;
 		background-color: #efebe0;
 		position: relative;
+		overflow: hidden;
 	}
 
 	&__img-wrapper{
@@ -26,8 +27,9 @@
 		vertical-align: top;
 		width: 50%;
 		height: 225px;
-		background-image: url("../img/bgDown.png");
-		background-position: center center ;
+		//background-image: url("../img/bgDown.png");
+		//background-position: center center ;
+		overflow: hidden;
 
 		&:hover .button-down__img{
 			//background-color: #efebe0;
@@ -44,9 +46,10 @@
 		vertical-align: top;
 		width: 50%;
 		height: 225px;
+		//
 		background-image: url("../img/bgUP.png");
-		background-position: center center ;
-
+		//background-position: center center ;
+		overflow: hidden;
 		&:hover .button-up__img{
 			//background-color: #efebe0;
 			//background-image: none;
@@ -88,3 +91,109 @@
 	fill: #fff;
 	opacity: 0.7;
 }
+
+//Slider
+
+//.wrapper{
+//	width: 700px;
+//	height: 620px;
+//	position: absolute;
+//	top: 50%;
+//	left: 50%;
+//	transform: translate(-50%, -50%);
+//	overflow: hidden;
+//	font-size: 0;
+//
+//}
+
+.main__pic{
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+.main__img{
+	list-style-type: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -100%;
+}
+
+.main__img img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.prev{
+	display: inline-block;
+	width: 50%;
+	height: 200px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.prev .btmItem{
+	top: 100%;
+}
+
+
+.next{
+	display: inline-block;
+	width: 50%;
+	height: 200px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.next .btmItem{
+	top: -100%;
+}
+
+.btmItem{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all 1s;
+	opacity: 0;
+
+}
+
+.btmImg{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+
+}
+
+.btmItem.active{
+	top: 0;
+	z-index: 100;
+	opacity: 1;
+}
+
+.main__img__active{
+	top: 0;
+}
+
+.btmItem.down{
+	top: 100%;
+}
+
+.btmItem.up{
+	top: -100%;
+}
+
+
+

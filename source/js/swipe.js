@@ -4,8 +4,16 @@
 var swipe = function () {
     var swipeButton = document.querySelector(".lable"),
         swipeSection = document.querySelector(".blog__left"),
-		container = $(".")
-		;
+		items = document.getElementsByClassName("blog-nav__item");
+    	console.log(items);
+
+    var removeActive = function () {
+    	for (i = 0; i< items.length; i++){
+    		items[i].classList.remove("blog-nav__item_active");
+		}
+
+	};
+
     return{
         init: function () {
             swipeButton.addEventListener("click", function (e) {
@@ -16,16 +24,22 @@ var swipe = function () {
                     swipeSection.classList.add("blog__left_active");
                 }
             })
-        }
+        },
+		click: function (e) {
+			for (i = 0; i< items.length; i++){
+				items[i].addEventListener('click', function (e) {
+					removeActive();
+					e.target.parentNode.classList.add("blog-nav__item_active");
+					console.log(e.target.parentNode);
+				})
+			}
+
+		}
     }
 };
 
 if (document.querySelector(".blog__left") !== null){
-	var menu = document.querySelector(".blog__left");
-
-	menu.addEventListener("click",function (e) {
-		console.log(this);
-	}, true);
 	swipe().init();
+	swipe().click();
 
 }

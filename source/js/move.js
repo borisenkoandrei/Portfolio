@@ -23,7 +23,6 @@ var  parallaxMove = (function () {
 if (document.querySelector('.portfolio-main-bg') !== null){
 	window.onscroll = function () {
 		var wScroll = window.pageYOffset;
-		console.log(wScroll);
 		parallaxMove().init(wScroll);
 	};
 }

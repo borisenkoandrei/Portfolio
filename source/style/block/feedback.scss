@@ -82,6 +82,7 @@
 		margin-left: 19px;
 		padding-left: 20px;
 		box-sizing: border-box;
+		position: relative;
 	}
 
 	&__email{
@@ -151,6 +152,42 @@
 
 		&:hover{
 			background-color: #009688;
+		}
+	}
+
+	&__error{
+		position: absolute;
+		background-color: red;
+		border-radius: 5px;
+		padding: 3px 7px;
+		color: #ffffff;
+		font-size: 16px;
+		font-family: 'Roboto-Medium';
+		left: 50%;
+		transform: translateX(-50%);
+		display: none;
+
+		&-name{
+			top: 141px;
+
+		}
+
+		&-message{
+			bottom: 38px;
+
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: rotate(45deg) translateX(-50%);
+			background-color: red;
+			width: 10px;
+			height: 10px;
+
 		}
 	}
 }
