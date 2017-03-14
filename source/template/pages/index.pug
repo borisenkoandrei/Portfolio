@@ -56,33 +56,33 @@ block content
 					form.auth__form
 						.auth__input-text
 							.auth__itput-text-img
-								svg.auth__itput-text-pic
+								svg.auth__itput-text-pic.login-pic
 									use(xlink:href="assets/img/sprite.svg#login")
-							input.auth__input(type="text" placeholder="Логин")
+							input.auth__input.login(type="text" placeholder="Логин")
 						.auth__input-text
 							.auth__itput-text-img
-								svg.auth__itput-text-pic
+								svg.auth__itput-text-pic.pass-pic
 									use(xlink:href="assets/img/sprite.svg#login")
-							input.auth__input(type="password" placeholder="Пароль")
+							input.auth__input.pass(type="password" placeholder="Пароль")
 						.auth__checkbox-container
 							label.auth__checkbox
-								input.auth_checkbox-fake(type="checkbox")
-								.auth_checkbox-true
+								input.auth_checkbox-fake.checkbox(type="checkbox")
+								.auth_checkbox-true.checkbox_face
 								.auth__checkbox-text Я человек
 						.auth_radio-container
 							.auth_radio-title Вы точно человек?
 							.auth_radio-items
 								label.auth_radio-item
-									input.auth_radio-input-true(type="radio" name="1")
+									input.auth_radio-input-true(type="radio" name="1" value="yes")
 									.auth_radio-input-false
 									.auth_radio-input-text Да
 								label.auth_radio-item
-									input.auth_radio-input-true(type="radio" name="1")
+									input.auth_radio-input-true(type="radio" name="1" value="no")
 									.auth_radio-input-false
 									.auth_radio-input-text Не уверен
 						.auth_buttons
-							button.auth_button(type="button") На главную
-							button.auth_button(type="button") Войти
+							button.auth_button.auth_button-back(type="button") На главную
+							button.auth_button.enter(type="button") Войти
 
 
 
