@@ -1,0 +1,123 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$-chiken-burger-name: 'Chiken burger';
+$-chiken-burger-x: 1000px;
+$-chiken-burger-y: 0px;
+$-chiken-burger-offset-x: -1000px;
+$-chiken-burger-offset-y: 0px;
+$-chiken-burger-width: 1000px;
+$-chiken-burger-height: 642px;
+$-chiken-burger-total-width: 2000px;
+$-chiken-burger-total-height: 1208px;
+$-chiken-burger-image: 'sprite.png';
+$-chiken-burger: (1000px, 0px, -1000px, 0px, 1000px, 642px, 2000px, 1208px, 'sprite.png', 'Chiken burger', );
+$-n-y-c-diner-bacon-cheeseburger-name: 'NYC-Diner-Bacon-Cheeseburger';
+$-n-y-c-diner-bacon-cheeseburger-x: 0px;
+$-n-y-c-diner-bacon-cheeseburger-y: 0px;
+$-n-y-c-diner-bacon-cheeseburger-offset-x: 0px;
+$-n-y-c-diner-bacon-cheeseburger-offset-y: 0px;
+$-n-y-c-diner-bacon-cheeseburger-width: 1000px;
+$-n-y-c-diner-bacon-cheeseburger-height: 796px;
+$-n-y-c-diner-bacon-cheeseburger-total-width: 2000px;
+$-n-y-c-diner-bacon-cheeseburger-total-height: 1208px;
+$-n-y-c-diner-bacon-cheeseburger-image: 'sprite.png';
+$-n-y-c-diner-bacon-cheeseburger: (0px, 0px, 0px, 0px, 1000px, 796px, 2000px, 1208px, 'sprite.png', 'NYC-Diner-Bacon-Cheeseburger', );
+$-spicy-shrimp-burger-name: 'Spicy_Shrimp_Burger';
+$-spicy-shrimp-burger-x: 0px;
+$-spicy-shrimp-burger-y: 796px;
+$-spicy-shrimp-burger-offset-x: 0px;
+$-spicy-shrimp-burger-offset-y: -796px;
+$-spicy-shrimp-burger-width: 439px;
+$-spicy-shrimp-burger-height: 412px;
+$-spicy-shrimp-burger-total-width: 2000px;
+$-spicy-shrimp-burger-total-height: 1208px;
+$-spicy-shrimp-burger-image: 'sprite.png';
+$-spicy-shrimp-burger: (0px, 796px, 0px, -796px, 439px, 412px, 2000px, 1208px, 'sprite.png', 'Spicy_Shrimp_Burger', );
+$burger-sandwich-p-n-g4124-name: 'burger_sandwich_PNG4124';
+$burger-sandwich-p-n-g4124-x: 439px;
+$burger-sandwich-p-n-g4124-y: 796px;
+$burger-sandwich-p-n-g4124-offset-x: -439px;
+$burger-sandwich-p-n-g4124-offset-y: -796px;
+$burger-sandwich-p-n-g4124-width: 500px;
+$burger-sandwich-p-n-g4124-height: 268px;
+$burger-sandwich-p-n-g4124-total-width: 2000px;
+$burger-sandwich-p-n-g4124-total-height: 1208px;
+$burger-sandwich-p-n-g4124-image: 'sprite.png';
+$burger-sandwich-p-n-g4124: (439px, 796px, -439px, -796px, 500px, 268px, 2000px, 1208px, 'sprite.png', 'burger_sandwich_PNG4124', );
+$spritesheet-width: 2000px;
+$spritesheet-height: 1208px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($-chiken-burger, $-n-y-c-diner-bacon-cheeseburger, $-spicy-shrimp-burger, $burger-sandwich-p-n-g4124, );
+$spritesheet: (2000px, 1208px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'BERNIERShade-Regular';
+  src: url('BERNIERShade-Regular.eot?#iefix') format('embedded-opentype'),  url('BERNIERShade-Regular.otf')  format('opentype'),
+	     url('BERNIERShade-Regular.woff') format('woff'), url('BERNIERShade-Regular.ttf')  format('truetype'), url('BERNIERShade-Regular.svg#BERNIERShade-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

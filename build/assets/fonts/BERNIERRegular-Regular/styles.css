@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'BERNIERRegular-Regular';
+  src: url('BERNIERRegular-Regular.eot?#iefix') format('embedded-opentype'),  url('BERNIERRegular-Regular.otf')  format('opentype'),
+	     url('BERNIERRegular-Regular.woff') format('woff'), url('BERNIERRegular-Regular.ttf')  format('truetype'), url('BERNIERRegular-Regular.svg#BERNIERRegular-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
