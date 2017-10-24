@@ -6,7 +6,7 @@
 	//background-image: url("../img/firstSection_bg.png");
 	background-position: center;
 	background-size: cover;
-	height: 785px;
+	height: 603px;
 	position: relative;
 	overflow: hidden;
 	&__content{
@@ -14,10 +14,11 @@
 		height: 100%;
 	}
 	&_blog{
-		height: 796px;
+		height: 603px;
 	}
 	&_portfolio{
 		background-image: none;
+		height: 690px;
 	}
 }
 
@@ -32,7 +33,7 @@
 
 	&__img{
 		//height: 900px;
-		width: 150%;
+		//width: 150%;
 	}
 }
 

@@ -45,17 +45,19 @@
     display: block;
     fill: transparent;
     stroke-width: 15;
+    transform: rotate(-90deg);
   }
 
   &__circle-under {
     stroke: #dfdcd5;
-    stroke-width: 20;
+    stroke-width: 15;
   }
 
   &__circle-above {
     stroke: $green;
-    stroke-width: 20;
-    stroke-dasharray: 650 722;
+    stroke-width: 15;
+    stroke-dasharray: 251;
+    stroke-dashoffset: 120;
   }
 
   &__desc{
